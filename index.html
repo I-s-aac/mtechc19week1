@@ -1,13 +1,26 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>AAAAAAAAA</title>
+        <title>hi</title>
         <script src="js/index.js"></script>
+        <script>
+            function doThing () {
+                let maxNum = 2;
+                let num = Math.round(Math.random() * maxNum);
+                let inputField = document.getElementById("guessing thing");
+                if (truenum == inputField.value) {
+                    inputField.type = "text";
+                    inputField.value = "test";
+                }
+                
+            }
+        </script>
     </head>
 
     <body>
-        <label for="guessing thing">guess a number between 1 and 1</label>
-        <input type="text" id="guessing thing">
+        <label for="guessing thing">guess a number between 0 and 10</label>
+        <input type="number" id="guessing thing" value="">
+        <input type="button" onclick="doThing()" value="test">
 
 
     </body>
